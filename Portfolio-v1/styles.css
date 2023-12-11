@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #443E48;
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #1c1120;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik Bubbles', sans-serif;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    color: #abc0e7; 
+}
+.logo {
+    font-family: 'alkalami', serif;
+    text-decoration:line-through;
+    color: white;
+    font-size: 1.2rem;
+}
+.profile {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+h1 {
+    
+    text-align: left;
+    font-size: 3.2rem;
+}
+.profile p{
+    text-align: left;
+}
+.profile h1 span {
+    color: #1c1120;
+    font-weight: 700;
+}
+input {
+    
+    min-width: 25rem;
+    min-height: 3.5rem;
+    border: 1px solid transparent;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    outline: none;
+    font-size: 1.5rem;
+    color: #1c1120;
+
+}
+.email-me button {
+    min-width: 8rem;
+    min-height: 3.5rem;
+    border: 1px solid transparent;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 600;
+    position: relative;
+    right: 2rem;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: #443E48;
+    
+   
+}
+.email-me button:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #1c1120;
+    cursor: pointer;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 5rem;
+    
+}
+.info {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.info h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.info h3 {
+    font-size: 2rem;
+    color: #1c1120;
+
+}
+.info p {
+    width: 100%;
+    max-width: 450px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+
+.photo-div {
+    width: 100%;
+    max-width: 450px;
+    
+}
+.photo-div img {
+    width: 100%;
+}
+.intro {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.intro p {
+    max-width: 60rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    background-color: #1c1120;
+    padding: 3rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    
+}
+.intro p i {
+    margin-left: 1rem;   
+    margin-right: 1rem;  
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.projects-heading {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    text-align: center; 
+    font-size: 3rem;
+}
+.projects-heading span {
+    color: #1c1120;
+}
+
+.card1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    
+}
+.card2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.card3 {
+    grid-row: 2 / 3;
+    grid-column: 3 /4;
+}
+.card4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.card5 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.card6 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.project-tile {
+    background-color: #1c1120;
+    padding: 3rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.project-preview {
+    width: 100%;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+.skills h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.skills-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 25rem;
+    border: 1px solid transparent;
+    background-color: #1c1120;
+    border-radius: 10px;
+    padding: 2.5rem;
+
+}
+.skill-card h3 {
+    font-size: 2.5rem;    
+}
+.skill-card i {
+    font-size: 5rem;
+}
+.skill-card p {
+    line-height: 1.5rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.social {
+    display: flex;
+    gap: 1.5rem;
+}
+.social i {
+    font-size: 3rem;
+    color: white;
+}
+footer p span {
+    color: #1c1120;
+    font-weight: 700;
+}
+@media screen and (max-width: 880px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-section {
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+    nav {
+        gap: 0.5rem
+    }
+    nav a {
+        padding: 1rem 0 1rem 0;
+    }
+    .email-me {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile {
+        align-items: center;
+    }
+    .profile p {
+        width: 100%;
+        text-align: center;
+    }
+    .email-me {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .profile .email-me input {
+      
+        width: 100%;
+        min-width: unset;
+        border-radius: 4rem;
+    }
+    .profile .email-me button {
+        position: unset;
+        min-width: unset;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .about {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .info {
+        align-items: center;
+    }
+    .skills-div {
+        flex-direction: column;
+       
+    }
+    .intro {
+        width: 100%;
+    }
+    .intro p {
+        width: 100%;
+        padding: 1rem;
+        letter-spacing: 0;
+        text-align: left;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    .project-tile {
+        padding: 1.5rem;
+    }
+    footer p {
+        text-align: center;
+    }
+}
